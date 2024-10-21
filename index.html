@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="movieRanking.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Ranking</title>
+    <rel
+      ="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color:green;
+}
+.app {
+  margin: 0 100px;
+}
+.app .navigation {
+  top: 0;
+  position: fixed;
+  background: rgb(74, 9, 83);
+  height: 60px;
+  width: 100%;
+  margin-left: -100px;
+  z-index: 3;
+}
+.app .navigation h3 {
+  position: fixed;
+  padding: 20px 0px;
+  margin-left: 100px;
+  color: white;
+  font-weight: bold;
+}
+.app .navigation ul {
+  position: fixed;
+  display: flex;
+  padding: 20px 0px;
+  right: 0;
+  margin-right: 100px;
+}
+.app .navigation ul li {
+  margin-left: 30px;
+  list-style: none;
+}
+.app .navigation ul li a {
+  text-decoration: none;
+  color: white;
+}
+.app header {
+  text-align: center;
+  margin: 0px 100px;
+  margin-top: 70px;
+}
+.app .heading img {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.app .movieGernes h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+.app .movieGernes .images {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 350px;
+  box-sizing: border-box;
+  padding: var(--gap);
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-flow: var(--row-height);
+  gap: var(--gap);
+}
+.app .movieGernes .images img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.app .movieGernes .images img:hover {
+  padding: 5px 5px;
+  box-shadow: 1px 2px 20px 3px rgb(153, 152, 152);
+}
+.app .topFiveMovies {
+  position: relative;
+  cursor: default;
+}
+.app .topFiveMovies h2 {
+  margin: 30px 0;
+}
+.app .topFiveMovies .images {
+  --gap: 16px;
+  --num-cols: 2;
+  --row-height: 400px;
+  box-sizing: border-box;
+  padding: var(--gap);
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-flow: var(--row-height);
+  gap: var(--gap);
+
+  /* width: 40%; */
+}
+.app .topFiveMovies .images .section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.app .topFiveMovies .images .section img {
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  object-fit: cover;
+}
+.section .rank {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(rgb(228, 105, 228), rgb(85, 1, 85));
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section .rank h1 {
+  font-size: 15px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  margin: 10px 0;
+  line-height: 1.2rem;
+}
+.section .rank button {
+  border-radius: 30px;
+  border: none;
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.section .rank button:hover {
+  background-color: yellow;}
+.footer-container.footer.footer-heaading,a{
+    display: inline-block;
+    padding: 60px;
+    margin-left: 5px;
+    list-style: none;
+    text-decoration: antiquewhite;
+  
+  }
+  .footer-container.footer.footer-heaading,h3[
+    
+  ]
+
+  }
+</style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="navigation">
+        <h3>MRP</h3>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">GENRES</a></li>
+          <li><a href="#">FAVOURITES</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+
+      <header>
+        <h2>Movie ranking Site</h2>
+        <p>
+          Welcome to our curated collection of top rated films where every
+          <br />
+          movie lover can find something to watch and able to view the ranksof
+          different<br />
+          movies and able to watch them and rate them according to his own view.
+        </p>
+      </header>
+      <div class="heading">
+        <img src="images/hq720(0).jpg" alt="" />
+      </div>
+      <div class="movieGernes">
+        <h2>Movie Genres</h2>
+        <div class="images">
+          <img src="images/hq720(1).jpg" alt="" />
+          <img src="images/hq720(2).jpg" alt="" />
+          <img src="images/hq720(3).jpg" alt="" />
+          <img src="images/hq720(5).jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="topFiveMovies">
+        <h2>Top Five Movies</h2>
+        <div class="images">
+          <div class="section">
+            <img src="images/hqdefault.jpg" alt="" />
+            <div class="rank">
+              <h1>1</h1>
+              <h4>Classic Trailer</h4>
+              <button>Watch Now</button>
+            </div>
+          </div>
+
+          <div class="section">
+            <img src="images/red eye.jpg" alt="" />
+            <div class="rank">
+              <h1>2</h1>
+              <h4>Red eye</h4>
+              <button>Watch Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="images">
+          <div class="section">
+            <img src="images/sddefault.jpg" alt="" />
+            <div class="rank">
+              <h1>3</h1>
+              <h4>To be the killer</h4>
+              <button>Watch Now</button>
+            </div>
+          </div>
+
+          <div class="section">
+            <img src="images/images-w1400.jpg" alt="" />
+            <div class="rank">
+              <h1>4</h1>
+              <h4>The Assassin</h4>
+              <button>Watch Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="footer-container">
+    <div class="footer">
+    <div class="footer-heading">  
+    <a href="#">Movie links<br>MRP Home Pages<br>MRP Latest reviews<br>Browse Movies<br>Find New Channels</br></a>
+    <a href="#">MRP<br>About MRP<br>Advertise On MRP<br>Terms of service<br>Get youtube data</br></a>
+    <a href="#">Contact Us</a>
+    </div>
+    </div>
+    </div>
+    <div class="loginPage">
+          <h3>Subscribe To Our Newsletter <input type="email" required placeholder="Enter Email">
+            <BUTton>submit</BUTton>
+          </h3> 
+          </div>
+          
+    </div>
+  </body>
+</html>
